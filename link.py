@@ -10,3 +10,4 @@ f = open('snapshot.jpg', 'rb')
 response = requests.post('http://13.124.202.212:3000/polaroid/uploaddiaryimage', files={'files':f}, data={'email':'mimo','petname':'토토'})
 
 print(response)
+f.close()
